@@ -1,0 +1,7 @@
+*.gzip
+*.sqlite3
+*.csv
+*.txt
+*.pkl
+*.parquet
+*.feather
