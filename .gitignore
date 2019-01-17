@@ -5,3 +5,5 @@
 *.pkl
 *.parquet
 *.feather
+.ipynb_checkpoints/
+*.DS_Store
