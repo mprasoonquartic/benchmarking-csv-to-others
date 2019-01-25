@@ -5,3 +5,4 @@
 *.pkl
 *.parquet
 *.feather
+.ipynb_checkpoints/
