@@ -218,6 +218,25 @@ def calculate_time_to_query_df(df):
     dfquerytime = time.time()-start
     return dfquerytime
 
+n = 25
+read_csv_times = []
+read_multiple_csv_times = []
+read_csv_chunks_times = []
+df_to_sql_times = []
+query_sql_times = []
+sql_to_df_times = []
+df_to_pkl_times = []
+pkl_to_df_times = []
+df_to_parquet_app1_times = []
+parquet_to_df_app1_times = []
+df_to_parquet_app2_times = []
+parquet_to_df_app2_times = []
+df_to_cpkl_times = []
+cpkl_to_df_times = []
+df_to_feather_times = []
+feather_to_df_times = []
+query_df_times = []
+
 # Calculating average time calculations
 
 for i in range(0,n):
@@ -305,7 +324,7 @@ for i in range(0,n):
     query_df_times.append(query_df_time)
     
     print("Query DF times: %d - value: %f" % (i+1,query_df_time))
-    
+
 def calcavg(lst):
     total = 0
     for val in lst:
